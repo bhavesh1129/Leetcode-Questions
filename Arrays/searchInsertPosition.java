@@ -1,6 +1,6 @@
 //Seach Insert Position (Binary Search)
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class searchInsertPosition {
