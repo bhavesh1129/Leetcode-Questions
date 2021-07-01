@@ -1,6 +1,6 @@
 //Move Zero
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class moveZero {
