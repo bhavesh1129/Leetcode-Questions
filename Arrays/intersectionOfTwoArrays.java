@@ -1,6 +1,6 @@
 //Intersection Of Two Arrays
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class intersectionOfTwoArrays {
