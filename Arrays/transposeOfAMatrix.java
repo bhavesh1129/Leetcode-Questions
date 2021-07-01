@@ -1,6 +1,6 @@
 // Transpose Of A Matrix
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.Scanner;
 
 public class transposeOfAMatrix {
