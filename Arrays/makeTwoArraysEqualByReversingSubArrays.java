@@ -1,6 +1,6 @@
 //Make Two Arrays Equal by Reversing Sub-arrays
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class makeTwoArraysEqualByReversingSubArrays {

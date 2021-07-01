@@ -1,6 +1,6 @@
 //Longest Common Prefix
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class longestCommonPrefix {

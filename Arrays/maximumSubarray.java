@@ -1,6 +1,6 @@
 //Maximum Subarray (Kadane's Algo)
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.Scanner;
 
 public class maximumSubarray {
