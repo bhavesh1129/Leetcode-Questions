@@ -1,6 +1,6 @@
 //Plus One
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.Scanner;
 
 public class plusOne {
