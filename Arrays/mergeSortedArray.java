@@ -1,6 +1,6 @@
 // Merge Sorted Array
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class mergeSortedArray {

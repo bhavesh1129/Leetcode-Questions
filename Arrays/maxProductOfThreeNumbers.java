@@ -1,6 +1,6 @@
 //Max Product of 3 Numbers
 
-package Arrays;
+package EasyQuestions.Arrays;
 import java.util.*;
 
 public class maxProductOfThreeNumbers {
