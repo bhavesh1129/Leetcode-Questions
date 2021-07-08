@@ -1,4 +1,5 @@
 //Factorial Trailing Zeroes
+//https://www.purplemath.com/modules/factzero.htm
 
 package EasyQuestions.Arrays;
 
