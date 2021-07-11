@@ -1,6 +1,6 @@
 //Largest Area Histogram
 
-package Pepcoding.Stack_Queue;
+package EasyQuestions.Stack_Queue;
 import java.util.*;
 
 public class largestAreaHistogram {
