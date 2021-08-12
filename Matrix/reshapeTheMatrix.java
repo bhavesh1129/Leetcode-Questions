@@ -1,6 +1,8 @@
+// Reshape The Matrix
+
 package EasyQuestions.Matrix;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class reshapeTheMatrix {
     public static void main(String[] args) {
@@ -15,7 +17,8 @@ public class reshapeTheMatrix {
                 matrix[i][j] = sc.nextInt();
             }
         }
-        reshapeTheMatrix(matrix, r, c);
+        int[][] result = reshapeTheMatrix(matrix, r, c);
+        System.out.println(Arrays.toString(result));
     }
 
     private static int[][] reshapeTheMatrix(int[][] mat, int r, int c) {
@@ -23,18 +26,18 @@ public class reshapeTheMatrix {
         int n = mat[0].length;
         if (m * n != r * c)
             return mat;
-        int p = 0;
-        int q = 0;
-        int[][] cat = new int[r][c];
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                if (q >= n && p < m - 1) {
-                    q = 0;
-                    p++;
+        int row = 0;
+        int col = 0;
+        int[][] res = new int[r][c];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                res[row][col++] = mat[i][j];
+                if (col == c) {
+                    row++;
+                    col = 0;
                 }
-                cat[i][j] = mat[p][q++];
             }
         }
-        return cat;
+        return res;
     }
 }
