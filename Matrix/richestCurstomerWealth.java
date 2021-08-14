@@ -1,7 +1,6 @@
 //Richest Customer Wealth
 
 package EasyQuestions.Matrix;
-
 import java.util.Scanner;
 
 public class richestCurstomerWealth {
