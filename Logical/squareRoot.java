@@ -1,21 +1,30 @@
 //SquareRoot of a number without any buit in function
 
 package EasyQuestions.Logical;
+
 import java.util.Scanner;
 
 public class squareRoot {
-    public static void main(String[] args) {
+    public static void main(String[] args) {                   
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        squareRoot(num);
+        System.out.println(squareRoot(num));
+
     }
 
-    private static void squareRoot(int num) {
-
-        long res = num;
-        while (res * res > num) {
-            res = (res + (num / res)) / 2;  //-> sqrtn+1=(sqrtn+(num/sqrtn))/2
+    private static int squareRoot(int num) {
+        int start = 0;
+        int end = num;
+        int res = 0;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (mid <= num / mid) {
+                res = mid;
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
         }
-        System.out.println(res);
+        return res;
     }
 }
