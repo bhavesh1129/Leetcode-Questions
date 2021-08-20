@@ -1,6 +1,7 @@
-//Intersection Of Two Arrays
+//Intersection Of Two Arrays II
 
 package EasyQuestions.Arrays;
+
 import java.util.*;
 
 public class intersectionOfTwoArrays {
@@ -16,22 +17,30 @@ public class intersectionOfTwoArrays {
         for (int i = 0; i < arr2.length; i++) {
             arr2[i] = sc.nextInt();
         }
-        intersectionOfTwoArrays(arr1, arr2);
+        int[] res = intersectionOfTwoArrays(arr1, arr2);
+        System.out.println(Arrays.toString(res));
     }
 
-    private static void intersectionOfTwoArrays(int[] arr1, int[] arr2) {
+    private static int[] intersectionOfTwoArrays(int[] arr1, int[] arr2) {
         Arrays.sort(arr1);
         Arrays.sort(arr2);
+        ArrayList<Integer> inter = new ArrayList<>();
         int i = 0, j = 0;
         while (i < arr1.length && j < arr2.length) {
-            if (arr1[i] < arr2[j]) {
+            if (arr1[i] == arr2[j]) {
+                inter.add(arr1[i]);
                 i++;
+                j++;
             } else if (arr1[i] > arr2[j]) {
                 j++;
             } else {
-                System.out.println(arr1[i++]);
-                j++;
+                i++;
             }
         }
+        int[] result = new int[inter.size()];
+        for (int k = 0; k < inter.size(); k++) {
+            result[k] = inter.get(k);
+        }
+        return result;
     }
 }
