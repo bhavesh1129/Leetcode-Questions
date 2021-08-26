@@ -1,6 +1,7 @@
 //Array Partition I
 
 package EasyQuestions.Arrays;
+
 import java.util.*;
 
 public class arrayPartitionI {
