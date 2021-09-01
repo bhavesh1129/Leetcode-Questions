@@ -1,6 +1,7 @@
 //Plus One
 
 package EasyQuestions.Arrays;
+
 import java.util.Scanner;
 
 public class plusOne {
@@ -11,10 +12,10 @@ public class plusOne {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        PlusOne(arr);
+        plusOne(arr);
     }
 
-    private static void PlusOne(int[] arr) {
+    private static void plusOne(int[] arr) {
         int length = arr.length;
         for (int i = length - 1; i >= 0; i--) {
             if (arr[i] < 9) {
