@@ -1,6 +1,7 @@
 //Check Duplicate Numbers
 
 package EasyQuestions.Logical;
+
 import java.util.Scanner;
 
 public class checkDuplicateNumbers {
