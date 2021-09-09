@@ -1,6 +1,7 @@
 //Find The Difference
 
 package EasyQuestions.Strings;
+
 import java.util.*;
 
 public class findTheDifference {
