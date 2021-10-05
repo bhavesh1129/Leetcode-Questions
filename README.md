@@ -12,4 +12,5 @@
 | 4 | Strings | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Strings |
 | 5 | Stacks & Queues | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Stack_Queue |
 | 6 | Recursion | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Recursion |
+| 7 | Bit (Bitwise) | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Bitwise%20Operators |
 
