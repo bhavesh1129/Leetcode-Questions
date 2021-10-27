@@ -14,6 +14,8 @@
 | 6 | Recursion | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Recursion |
 | 7 | Bit (Bitwise) | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Bitwise%20Operators |
 
+<hr/>
+
 | Sr No. | Challenges | DIRECTORY LINKS |
 | :---: | :---: | :-: |
 | 1 | Algorithm I | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Algorithm%20I |
