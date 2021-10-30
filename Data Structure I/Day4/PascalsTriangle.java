@@ -10,14 +10,20 @@ public class Main {
     }
 
     private static List<List<Integer>> generate(int n) {
-        List<List<Integer>> res = new ArrayList();
-        List<Integer> row = new ArrayList();
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<Integer> row, pre = null;
+
         for (int i = 0; i < n; i++) {
-            for (int j = row.size() - 1; j >= 1; j--) {
-                row.set(j, row.get(j) + row.get(j - 1));
+            row = new ArrayList<Integer>();
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    row.add(1);
+                } else {
+                    row.add(pre.get(j - 1) + pre.get(j));
+                }
             }
-            row.add(1);
-            res.add(new ArrayList(row));
+            pre = row;
+            res.add(row);
         }
         return res;
     }
