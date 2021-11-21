@@ -15,6 +15,7 @@
 | 7 | Bit (Bitwise) | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Bitwise%20Operators |
 | 8 | HashSet | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/Hashset |
 | 9 | LinkedList | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/LinkedList |
+| 9 | Binary Tree | https://github.com/bhavesh1129/Leetcode-Questions/tree/main/BinaryTree |
 
 <hr/>
 
