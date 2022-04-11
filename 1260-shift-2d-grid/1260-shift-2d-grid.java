@@ -25,7 +25,6 @@ class Solution {
             // repeat
             grid = temp;
         }
-        
         return (List)Arrays.asList(temp);
     }
 }
