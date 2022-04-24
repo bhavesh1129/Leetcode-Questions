@@ -1,21 +1,15 @@
 class Solution {
     public int countLatticePoints(int[][] circles) {
-        int count = 0;
-        for (int xCoordinate = 0; xCoordinate <= 200; xCoordinate++) {
-            for (int yCoordinate = 0; yCoordinate <= 200; yCoordinate++) {
-                for (int i = 0; i < circles.length; i++) {
-                    int[] circle = circles[i];
-                    int xCircle = circle[0];
-                    int yCircle = circle[1];
-                    int radiusCircle = circle[2];
-                    
-                    if (Math.pow(xCoordinate - xCircle, 2) + Math.pow(yCoordinate - yCircle, 2) <= Math.pow(radiusCircle, 2)) {
-                        count++;
-                        break;
+        HashSet<String> res = new HashSet<>();
+        for (int[] arr : circles) {
+            int x = arr[0], y = arr[1], r = arr[2];
+            for (int i = x - r; i <= x + r; i++)
+                for (int j = y - r; j <= y + r; j++) {
+                    if ((x - i) * (x - i) + (y - j) * (y - j) <= r * r){
+                        res.add(i + "," + j);
                     }
                 }
-            }
         }
-        return count;
+        return res.size();
     }
 }
